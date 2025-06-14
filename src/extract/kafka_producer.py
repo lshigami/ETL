@@ -5,8 +5,8 @@ from .config import get_kafka_config
 class KafkaProducer:
     def __init__(self):
         config = get_kafka_config()
-        self.producer = Producer({'bootstrap.servers': config['bootstrap_servers']})
-        self.topic = config['topic']
+        self.producer = Producer({'bootstrap.servers': config['kafka']['bootstrap_servers']})
+        self.topic = config['kafka']['topic']
 
     def delivery_report(self, err, msg):
         if err is not None:

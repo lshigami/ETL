@@ -1,0 +1,16 @@
+mongodb:
+  uri: "mongodb://admin:B1n4nc3@localhost:27017"
+  database: "crypto_analysis"
+  collections:
+    - name: "btc-price-zscore-30s"
+      window: "30s"
+    - name: "btc-price-zscore-1m"
+      window: "1m"
+    - name: "btc-price-zscore-5m"
+      window: "5m"
+    - name: "btc-price-zscore-15m"
+      window: "15m"
+    - name: "btc-price-zscore-30m"
+      window: "30m"
+    - name: "btc-price-zscore-1h"
+      window: "1h"

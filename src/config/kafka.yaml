@@ -1,2 +1,12 @@
-bootstrap_servers: "localhost:9092"
-topic: "btc-price"
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "btc-price"
+  topics:
+    zscore: "btc-price-zscore"
+  consumer:
+    group_id: "btc-price-consumer"
+    auto_offset_reset: "latest"
+    enable_auto_commit: "true"
+    auto_commit_interval_ms: "5000"
+    max_poll_records: "500"
+    session_timeout_ms: "30000"
