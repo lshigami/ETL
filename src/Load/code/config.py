@@ -3,7 +3,7 @@ import os
 
 def load_yaml_config(config_file):
     """Load configuration from YAML file"""
-    config_path = os.path.join(os.path.dirname(__file__), '..', 'config', config_file)
+    config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', config_file)
     with open(config_path, 'r') as f:
         return yaml.safe_load(f)
 

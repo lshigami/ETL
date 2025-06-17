@@ -4,7 +4,7 @@ install:
 	pip install -e .
 
 run-extract:
-	python -m extract.main
+	python -m extract.22120334
 
 run-moving:
 	python -m transform.22120334_moving
@@ -13,7 +13,7 @@ run-zscore:
 	python -m transform.22120334_zscore
 
 run-load:
-	python -m load.main
+	python -m load.22120334
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -r {} +

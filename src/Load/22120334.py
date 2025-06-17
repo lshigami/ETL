@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
-from .code.stream_writer import StreamWriter
-from .code.config import get_mongodb_config, get_kafka_config, get_spark_config
+from load.code.stream_writer import StreamWriter
+from load.code.config import get_mongodb_config, get_kafka_config, get_spark_config
 
 def main():
     # Load configurations
